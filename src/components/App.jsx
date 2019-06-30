@@ -1,6 +1,7 @@
 import React from "react";
 
 import NavBar from "./NavBar";
+import FeedTable from "./FeedTable";
 
 function App() {
   var appStyles = {
@@ -10,7 +11,9 @@ function App() {
   return(
     <div style={appStyles}>
       <NavBar/>
+      <FeedTable/>
     </div>
+    
   );
 }
 
