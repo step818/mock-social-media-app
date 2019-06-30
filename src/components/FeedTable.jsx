@@ -8,6 +8,7 @@ function FeedTable() {
     display: 'grid',
     border: '1px solid gray',
     width: '50%',
+    height: '1000px',
     textAlign: 'center',
     marginLeft: '25%',
     marginTop: '2%',
