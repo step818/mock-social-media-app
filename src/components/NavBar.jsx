@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from 'react-router-dom';
+
 
 function NavBar() {
   var styling = {
@@ -13,7 +15,7 @@ function NavBar() {
   }
   return (
     <div style = {styling}>
-      <h3>Home</h3>
+      <Link to="/">Home</Link>
       <h3>Notifications</h3>
       <h3>Messages</h3>
       <hr></hr>

@@ -1,7 +1,10 @@
 import React from "react";
+import { Switch, Route } from 'react-router-dom';
 
 import NavBar from "./NavBar";
 import FeedTable from "./FeedTable";
+import Error404 from "./Error404";
+
 
 function App() {
   var appStyles = {
@@ -11,7 +14,10 @@ function App() {
   return(
     <div style={appStyles}>
       <NavBar/>
-      <FeedTable/>
+      <Switch>
+        <Route exact path='/' component={FeedTable} />
+        <Route component={Error404}/>
+      </Switch>
     </div>
     
   );

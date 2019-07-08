@@ -1,8 +1,7 @@
 import React from "react";
-import PropTypes from 'prop-types';
-import ThoughtFormat from './ThoughtFormat';
 
-function Feed(props) {
+
+function Feed() {
   var feedStyle = {
     display: 'grid',
     border: '1px solid blue',
@@ -13,14 +12,11 @@ function Feed(props) {
   return(
     <div style={feedStyle}>
       <hr/>
-      {props.tweetList.map((thought,index) => <ThoughtFormat name={thought.name} tweet=       {thought.tweet} key={index} />
-      )}
+      <p>This is feed</p>
     </div>
   );
 }
 
-Feed.propTypes = {
-  tweetLlist: PropTypes.array
-};
+
 
 export default Feed;
